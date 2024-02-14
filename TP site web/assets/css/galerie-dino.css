@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ************* HEADER ***************** */
+
+#headerMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+#headerMenu img {
+    width: 9%;
+    margin: 10px 0 10px 42px;
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu a:nth-child(1) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13% 0 0;
+}
+
+.menu a:nth-child(2) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.menu a:nth-child(3) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13%;
+}
+
+.menu a:nth-child(4) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+/* ************* GALERIE ************************** */
+
+.mosaic {
+    display: grid;
+    gap: 20px;
+    width: 85%;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 4% 5% 1% 8%;
+    perspective: 1000px;
+}
+
+.mosaic img {
+    width: 100%;
+    object-fit: cover;
+    height: fit-content;
+}
+
+.card1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    height: fit-content;
+}
+
+.card2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    height: fit-content;
+}
+
+.card3 {
+    grid-column: 1 /span 2;
+    grid-row: 1 / 2;
+    margin-top: 64%;
+    height: fit-content;
+    animation: card cubic-bezier(0, -0.01, 0, 1.02);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+
+.card4 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    height: fit-content;
+    animation: card cubic-bezier(0, -0.01, 0, 1.43);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+.card5 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+    width: 78%;
+    margin: -34% 0 0 0%;
+    height: fit-content;
+    animation: card linear(0 0%, 1.13 46.9%);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+.card6 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+    margin: -50% 0% 0% -15%;
+    height: fit-content;
+    animation: card linear(0 0%, 1.13 46.9%);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes card {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.image {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: fit-content;
+}
+
+.hover1 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 377px;
+    width: 669px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #00000075;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hover2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 805px;
+    width: 453px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #00000075;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hover3 {
+    display: flex;
+    position: absolute;
+    height: 376px;
+    bottom: 1680px;
+    width: 668px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #00000075;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hover4 {
+    display: flex;
+    position: absolute;
+    bottom: 1085px;
+    height: 570px;
+    width: 1140px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #00000075;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hover5 {
+    display: flex;
+    position: absolute;
+    bottom: 128px;
+    height: 927px;
+    width: 522px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #00000075;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hover6 {
+    display: flex;
+    position: absolute;
+    bottom: 129px;
+    height: 925px;
+    width: 520px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: #00000075;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2, p {
+  color: #fff;
+}
+
+h2 {
+    margin-top: 5%;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+p {
+    margin: 0 14% 9%;
+    text-align: justify;
+    line-height: 25px;
+    font-family: 'Playfair', serif;
+    font-size: 1.2em;
+}
+
+.card1:hover .hover1 {
+  opacity: 1;
+}
+
+.card2:hover .hover2 {
+  opacity: 1;
+}
+
+.card3:hover .hover3 {
+  opacity: 1;
+}
+
+.card4:hover .hover4 {
+  opacity: 1;
+}
+
+.card5:hover .hover5 {
+  opacity: 1;
+}
+
+.card6:hover .hover6 {
+  opacity: 1;
+}
+
+
+/* ************* FOOTER **************** */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+    background-color: #000;
+}
+
+#reseauxSocial {
+    width: 40%;
+    font-size: 2.6em;
+    text-align: center;
+    padding: 0 0 0 4%;
+}
+
+#reseauxSocial a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#reseauxSocial i {
+    margin-right: 10%;
+}
+
+#footer {
+    width: 78%;
+    margin-top: 28px;
+    text-align: center;
+    padding: 0 0 0 2%;
+}
+
+#footer a {
+    text-align: center;
+    margin-right: 5%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+
+/* ********** RESPONSIVE ****************** */
+
+@media screen and (max-width: 502px) {
+
+    /* MENU */
+
+    #headerMenu img {
+        width: 17%;
+        margin: 10px 0 10px 12px;
+    }
+
+    .menu {
+        width: 500px;
+    }
+
+    .menu a:nth-child(1) {
+        font-size: 1em;
+    }
+    
+    .menu a:nth-child(2) {
+        font-size: 1em;
+    }
+
+    .menu a:nth-child(3) {
+        display: none;
+    }
+
+
+    /* GALERY */
+
+    .mosaic {
+        gap: 7px;
+        width: 90%;
+        margin: 11% 0% 0% 6%;
+    }
+
+    .hover1 {
+        height: 144px;
+        width: 256px;
+    }
+
+    .hover1 h2 {
+        margin-top: 23%;
+    }
+
+    .hover2 {
+        height: 308px;
+        width: 173px;
+    }
+
+    .hover3 {
+        height: 144px;
+        bottom: 647px;
+        width: 255px;
+    }
+
+    .hover3 h2 {
+        margin-top: 22%;
+    }
+
+    .hover4 {
+        bottom: 418px;
+        height: 219px;
+        width: 436px;
+    }
+
+    .hover5 {
+        bottom: 50px;
+        height: 355px;
+        width: 199px;
+    }
+
+    .hover6 {
+        bottom: 51px;
+        height: 354px;
+        width: 199px;
+    }
+
+    h2 {
+        margin-top: 78%;
+        font-size: 2em;
+    }
+
+    p {
+        display: none;
+    }
+
+    
+    /* FOOTER */
+
+    #reseauxSocial {
+        width: 90%;
+        font-size: 2.4em;
+    }
+
+    #footer {
+        display: flex;
+        width: 94%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a {
+        font-size: 1em;
+    }
+
+
+}

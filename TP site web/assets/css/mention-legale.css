@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    background-image: url(../images/mountains-7427623.jpg);
+    background-size: cover;
+}
+
+#headerMenu {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+
+#headerMenu img {
+    width: 9%;
+    margin: 10px 0 10px 42px;
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu a:nth-child(1) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13% 0 0;
+}
+
+.menu a:nth-child(2) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.menu a:nth-child(3) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13%;
+}
+
+.menu a:nth-child(4) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* *********** MAIN **************** */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 15% 4% 15%;
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-size: 3.2em;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6 {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Playfair', serif;
+    width: 75%; 
+    color: #fff;
+}
+
+li {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 3% 2% 0 0;
+}
+
+
+/* ********** FOOTER *************** */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+    background-color: #000;
+}
+
+#reseauxSocial {
+    width: 40%;
+    font-size: 2.6em;
+    text-align: center;
+    padding: 0 0 0 4%;
+}
+
+#reseauxSocial a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#reseauxSocial i {
+    margin-right: 10%;
+}
+
+#footer {
+    width: 78%;
+    margin-top: 28px;
+    text-align: center;
+    padding: 0 0 0 2%;
+}
+
+#footer a {
+    text-align: center;
+    margin-right: 5%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+
+/* ********** RESPONSIVE ****************** */
+
+@media screen and (max-width: 502px) {
+
+       /* MENU */
+
+    #headerMenu img {
+        width: 17%;
+        margin: 10px 0 10px 12px;
+    }
+
+    .menu {
+        width: 500px;
+    }
+
+    .menu a:nth-child(1) {
+        font-size: 1em;
+    }
+    
+    .menu a:nth-child(2) {
+        font-size: 1em;
+    }
+
+    .menu a:nth-child(3) {
+        display: none;
+    }
+
+
+    /* MAIN */
+
+    h1 {
+        margin-top: 75px;
+    }
+
+    .p1, .p2, .p3, .p4, .p5, .p6 {
+        text-shadow: 0px 0px 5px #000;
+    }
+
+    /* FOOTER */
+
+    #reseauxSocial {
+        width: 90%;
+        font-size: 2.4em;
+    }
+
+    #footer {
+        display: flex;
+        width: 94%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a {
+        font-size: 1em;
+    }
+}

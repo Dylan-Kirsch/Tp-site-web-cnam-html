@@ -1,0 +1,608 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+
+/*  
+    titre:               font-family: 'Fjalla One', sans-serif;
+    titre secondaire:    font-family: 'Playfair Display SC', sans-serif;
+    texte                font-family: 'Playfair', serif; 
+*/
+
+/* ********************** Header **************** */
+
+#headerMenu {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+#headerMenu img {
+    width: 9%;
+    margin: 10px 0 10px 42px;
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu a:nth-child(1) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13% 0 0;
+}
+
+.menu a:nth-child(2) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.menu a:nth-child(3) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13%;
+}
+
+.menu a:nth-child(4) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+/* ************* BANNIERE PARALLAXE *************** */
+
+#parallaxe-baniere {
+    position: relative;
+    z-index: 2;
+    height: 99vh;
+    box-shadow: 0px 0px 55px 21px #000000b8;
+}
+
+.paysage {
+    width: 100%;
+    height: 99vh;
+}
+
+.t-rex {
+    position: absolute;
+    left: 472px;
+    bottom: 73px;
+    width: 34%;
+    transition: 0.2s;
+    animation: t-rex linear;
+    animation-timeline: view();
+    animation-range-start: 450px;
+    animation-range-end: cover;
+}
+
+@keyframes t-rex {
+    from {transform: scale(0.98);}
+    to {transform: scale(1.3);}
+}
+
+.meteorite {
+    position: absolute;
+    left: 506px;
+    bottom: 504px;
+    width: 21%;
+    transition: 0.3s;
+    animation: meteorite ease-in;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes meteorite {
+    from {transform: scale(-6);}
+    to {transform: scale(3.5);}
+}
+
+.ptero {
+    position: absolute;
+    left: 294px;
+    bottom: 335px;
+    width: 54%;
+    transition: 0.2s;
+    animation: ptero ease-in;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes ptero {
+    from {left: 89%;}
+    to {left: -23%}
+}
+
+.dino-famille {
+    position: absolute;
+    left: 1079px;
+    bottom: 251px;
+    width: 9%;
+    transition: 0.2s;
+    animation: dino-famille ease-in;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes dino-famille {
+    from {left: 79%;}
+    
+    to {left: 91%;}
+}
+
+/* *************** DECOUVERTE DINOSAURE **************** */
+
+#lesDinosaures {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: lesDinosaures cubic-bezier(0, -0.01, 0, 1.18);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+#lesDinosaures img {
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    bottom: 299px;
+    color: #b65700;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5em;
+    letter-spacing: 9px;
+    padding: 0;
+    text-shadow: 1px 0px 2px white, -1px 0px 2px white, 0px 1px 2px white, 0px -1px 2px white;
+    z-index: 2;
+    animation: lesDinosaures cubic-bezier(0, -0.01, 0, 1.07);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes lesDinosaures {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* ******** LIEUX ********************** */
+
+#lieux {
+    margin-top: 3%;
+    height: 263vh;
+}
+
+@keyframes lieux {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.lieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: lieux cubic-bezier(0, 0, 0.41, 0.88);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+.lieu h2 {
+    font-size: 2.3em;
+    font-family: 'Playfair Display SC', sans-serif;
+}
+
+.lieu p {
+    width: 48%;
+    padding: 0;
+    font-size: 1.3em;
+    font-family: 'Playfair', serif;
+    text-align: center;
+}
+
+#museum {
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    animation: lieux cubic-bezier(0, 0, 0, 1.58);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+.musee1 img {
+    width: 59%;
+    border-radius: 25px;
+    margin-left: 22%;
+    box-shadow: 0px 0px 14px -4px #000;
+}
+
+
+
+.musee2 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.musee2 img {
+    width: 59%;
+    margin-top: -74%;
+    margin-left: 12%;
+    box-shadow: 0px 0px 14px -4px #000;
+    border-radius: 25px;
+}
+
+.musee1\.2 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.musee1\.2 img {
+    width: 59%;
+    margin-top: -64%;
+    margin-left: 19%;
+    box-shadow: 0px 0px 14px -4px #000;
+    border-radius: 25px;
+}
+
+.musee2\.2 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.musee2\.2 img {
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 26%;
+    box-shadow: 0px 0px 14px -4px #000;
+    border-radius: 25px;
+}
+
+
+/* ************ GALERY ************** */
+
+#gallerieDino {
+    margin-top: 3%;
+    background-color: #ddb488;
+    animation: galery cubic-bezier(0, 0, 0.16, 1.31);
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: cover;
+}
+
+@keyframes galery {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.dinogallerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.dinogallerie h2 {
+    font-size: 2.3em;
+    font-family: 'Playfair Display SC', sans-serif;
+}
+
+.dinogallerie p {
+    width: 48%;
+    padding: 0;
+    font-size: 1.5em;
+    font-family: 'Playfair', serif;
+    text-align: center;
+}
+
+.gallerieCards {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 0px 23px -6px rgb(0 0 0);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description {
+    text-transform: uppercase;
+    font-family: 'Playfair', serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding-left: 5%;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+    height: 400px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../images/card-images/dinosaure-effrayant.jpg.png');
+}
+.card[for="c2"] {
+    background-image: url('../images/card-images/pterodacril.jpg');
+}
+.card[for="c3"] {
+    background-image: url('../images/card-images/raptor.jpg.png');
+}
+.card[for="c4"] {
+    background-image: url('../images/card-images/long-cou.jpg');
+}
+
+
+/* ********** FOOTER *************** */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+    background-color: #000;
+}
+
+#reseauxSocial {
+    width: 40%;
+    font-size: 2.6em;
+    text-align: center;
+    padding: 0 0 0 4%;
+}
+
+#reseauxSocial a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#reseauxSocial i {
+    margin-right: 10%;
+}
+
+#footer {
+    width: 78%;
+    margin-top: 28px;
+    text-align: center;
+    padding: 0 0 0 2%;
+}
+
+#footer a {
+    text-align: center;
+    margin-right: 5%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+
+/* ********** RESPONSIVE ****************** */
+
+@media screen and (max-width: 502px) {
+
+    #parallaxe-baniere {
+        height: 41vh;
+    }
+
+    .paysage {
+        height: 41vh;
+        object-fit: cover;
+    }
+
+    .t-rex {
+        left: 155px;
+        bottom: 26px;
+        width: 34%;
+        animation: none;
+    }
+
+    .meteorite {
+        left: 187px;
+        bottom: 200px;
+        width: 25%;
+        animation: none;
+    }
+
+    .ptero {
+        display: none;
+        animation: none;
+    }
+
+    .dino-famille {
+        display: none;
+        animation: none;
+    }
+
+    /* MENU */
+
+    #headerMenu img {
+        width: 17%;
+        margin: 10px 0 10px 12px;
+    }
+
+    .menu {
+        width: 500px;
+    }
+
+    .menu a:nth-child(1) {
+        font-size: 1em;
+    }
+    
+    .menu a:nth-child(2) {
+        font-size: 1em;
+    }
+
+    .menu a:nth-child(3) {
+        display: none;
+    }
+
+    /* DECOUVERTE DINOSAURES */
+
+    #lesDinosaures img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    h1 {
+        bottom: 118px;
+        font-size: 2em;
+        left: 15px;
+        text-align: center;
+        letter-spacing: 6px;
+        animation: none;
+    }
+
+    /* LIEU */
+
+    #lieux {
+        margin-top: 3%;
+        height: 120vh;
+    }
+
+    .lieu p {
+        width: 89%;
+    }
+
+    #museum {
+        grid-template-rows: 1fr 1fr 0fr;
+    }
+
+    /* GALERY */
+
+    .gallerieCards {
+        display: block;
+        height: 129vh;
+    }
+
+    .dinogallerie h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .dinogallerie p {
+        width: 82%;
+        font-size: 1.3em;
+    }
+
+    .cards {
+        height: 779px;
+        flex-direction: column;
+    }
+
+    .card {
+        transition: none;
+        margin-top: 70px;
+    }
+    
+    input:checked + label {
+        width: 435px;
+        height: 200px;
+    }
+    
+
+    /* FOOTER */
+
+    #reseauxSocial {
+        width: 90%;
+        font-size: 2.4em;
+    }
+
+    #footer {
+        display: flex;
+        width: 94%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a {
+        font-size: 1em;
+    }
+
+}

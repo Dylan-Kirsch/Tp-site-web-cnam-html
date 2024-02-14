@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+section h1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    filter: url(#feu);
+}
+
+section h1 {
+    position: relative;
+    color: #ffbb00;
+    left: 167px;
+    font-weight: 600;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #ff4d00, 0 0 40px #ff4d00, 0 0 80px #ff4d00, 0 0 160px #ff4d00, 0 0 240px #ff4d00;
+    font-size: 14em;
+    -webkit-box-reflect: below -55px linear-gradient(transparent, #0004);
+}
+
+section a {
+    position: relative;
+    font-size: 2em;
+    left: -130px;
+    bottom: 524px;
+    filter: url(#vague);
+}
+
+section a {
+    position: relative;
+    color: #00feff;
+    font-weight: 600;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00a2ff, 0 0 40px #00c3ff, 0 0 80px #00ffd7, 0 0 160px #00aaff, 0 0 240px #009aff;
+    -webkit-box-reflect: below -55px linear-gradient(transparent, #0004);
+}
+
+
+/* ********** RESPONSIVE ****************** */
+
+@media screen and (max-width: 502px) {
+
+    section h1 {
+        left: 72px;
+        transform: scale(0.4);
+        font-size: 12em;
+        -webkit-box-reflect: below -55px linear-gradient(transparent, #00000017);
+    }
+
+    section a {
+        left: 18px;
+        bottom: 578px;
+    }
+}

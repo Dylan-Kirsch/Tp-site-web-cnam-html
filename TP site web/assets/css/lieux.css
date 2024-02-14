@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/foret-tropicale-tropicale-mysterieuse-brille-vegetation-luxuriante-generee-par-ia.jpg);
+    background-size: cover;
+}
+
+
+/* ********************** Header **************** */
+
+#headerMenu {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+#headerMenu img {
+    width: 9%;
+    margin: 10px 0 10px 42px;
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu a:nth-child(1) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13% 0 0;
+}
+
+.menu a:nth-child(2) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.menu a:nth-child(3) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0 13%;
+}
+
+.menu a:nth-child(4) {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+/* ********** MAIN *********** */
+
+th {
+    font-size: 1.3em;
+    padding: 14px 0px;
+    background-color: #00000030;
+    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+}
+
+table {
+    position: absolute;
+    left: 295px;
+    bottom: 25px;
+    background-image: url(../images/fond-texture-feuilles-vertes-metalliques.jpg);
+    background-size: cover;
+    width: 60%;
+}
+
+table, tr, td {
+    border: 3px solid #00893c;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+tbody {
+    box-shadow: -8px 11px 41px -9px #000;
+}
+
+.LieuxPhoto td:nth-child(1) {
+    height: 31vh;
+    width: 36%;
+}
+
+.museeEphemere {
+    width: 90%;
+    border-radius: 3% 40%;
+    box-shadow: -1px 0px 8px 12px #000000b0;
+    margin: 4%;
+}
+
+.LieuxPhoto td:nth-child(2) {
+    width: 33%;
+}
+
+.museumHistoire {
+    width: 92%;
+    border-radius: 40% 5%;
+    height: 27vh;
+    box-shadow: -1px 0px 8px 12px #000000b0;
+    margin: 4%;
+}
+
+.choix {
+    font-size: 2em;
+}
+
+img {
+    width: 45%;
+}
+
+.detail td {
+    font-size: 1.3em;
+    font-family: 'Lumanosimo', cursive;
+    font-weight: 900;
+}
+
+.lieuVille {
+    text-align: center;
+    background: #000000a1;
+    font-family: 'Playfair Display SC', sans-serif;
+}
+
+.lieuVille td {
+    font-size: 1.8em;
+    font-weight: 800;
+    padding: 12px 0;
+}
+
+.lieuxDescription {
+    background: #000000b3;
+    font-family: 'Playfair', serif;
+    line-height: 20px;
+}
+
+.lieuxDescription td {
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+.detail td:nth-child(1) a {
+    color: #ff8200;
+    text-shadow: 0px 0px 7px #000;
+    text-decoration: none;
+}
+
+.detail td:nth-child(2) a {
+    color: #ff8200;
+    text-shadow: 0px 0px 6px #000;
+    text-decoration: none;
+}
+
+.detail {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.detail td {
+    background: #000000bc;
+    padding: 10px;
+    font-family: 'Playfair', serif;
+}
+
+.detail td:hover {
+    background: #00a52f82;
+}
+
+
+/* ********** RESPONSIVE ****************** */
+
+@media screen and (max-width: 502px) {
+
+    /* MENU */
+
+    #headerMenu img {
+        width: 17%;
+        margin: 10px 0 10px 12px;
+    }
+
+    .menu {
+        width: 500px;
+    }
+
+    .menu a:nth-child(1) {
+        font-size: 1em;
+    }
+    
+    .menu a:nth-child(2) {
+        font-size: 1em;
+    }
+
+    .menu a:nth-child(3) {
+        display: none;
+    }
+
+    /* TABLEAU */
+    
+    table {
+        position: absolute;
+        left: 18px;
+        bottom: 40px;
+        width: 93%;
+    }
+
+    .choix {
+        font-size: 1.5em;
+    }
+
+    th {
+        font-size: 1em;
+    }
+
+    .museeEphemere {
+        width: 90%;
+        border-radius: 3% 40%;
+        box-shadow: -1px 0px 8px 8px #000000b0;
+        margin: 4%;
+    }
+
+    .museumHistoire {
+        width: 91%;
+        height: 14vh;
+        box-shadow: -1px 0px 8px 4px #000000b0;
+        margin: 4% 0 0 5%;
+    }
+
+    .lieuVille td {
+        font-size: 1.5em;
+    }
+
+    .lieuxDescription td {
+        font-size: 1em;
+    }
+
+    .detail {
+        font-size: 1.2em;
+    }
+    
+}

@@ -27,7 +27,7 @@ h1 {
     font-weight: 700;
 }
 
-img {
+.imgContact {
     width: 30%;
     height: 100vh;
     box-shadow: 0px 0px 14px -6px #000;
@@ -166,7 +166,7 @@ form {
         bottom: 92%;
     }
 
-    img {
+    .imgContact {
         display: none;
     }
 
